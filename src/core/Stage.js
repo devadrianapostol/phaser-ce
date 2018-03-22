@@ -262,6 +262,14 @@ Phaser.Stage.prototype.checkVisibility = function () {
         return _this.visibilityChange(event);
     };
 
+    this._onChangePause = function () {
+        return _this._onChange({ type: 'pause' });
+    };
+
+    this._onChangeResume = function () {
+        return _this._onChange({ type: 'resume' });
+    };
+
     this._onClick = function (event) {
         if ((document.hasFocus !== undefined) && !document.hasFocus())
         {
@@ -283,15 +291,23 @@ Phaser.Stage.prototype.checkVisibility = function () {
 
     window.addEventListener('click', this._onClick);
 
-    if (this.game.device.cocoonJSApp)
+    if (this.game.device.cocoonJSApp && CocoonJS.App)
     {
-        CocoonJS.App.onSuspended.addEventListener(function () {
-            Phaser.Stage.prototype.visibilityChange.call(_this, { type: "pause" });
-        });
+        if (CocoonJS.App.onSuspended)
+        {
+            CocoonJS.App.onSuspended.addEventListener(this._onChangePause);
+        }
 
-        CocoonJS.App.onActivated.addEventListener(function () {
-            Phaser.Stage.prototype.visibilityChange.call(_this, { type: "resume" });
-        });
+        if (CocoonJS.App.onActivated)
+        {
+            CocoonJS.App.onActivated.addEventListener(this._onChangeResume);
+        }
+
+        if (CocoonJS.App.on)
+        {
+            CocoonJS.App.on('activated', this._onChangeResume);
+            CocoonJS.App.on('suspended', this._onChangePause);
+        }
     }
 
 };

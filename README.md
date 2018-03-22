@@ -1,17 +1,17 @@
 # Phaser CE (Community Edition)
 
-<img src="http://phaser.io/images/github/arcade-cab.png" align="right" width="400" height="617">
+<img src="https://phaser.io/images/github/arcade-cab.png" align="right" width="400" height="617">
 
 Phaser is a fast, free, and fun open source HTML5 game framework. It uses a custom build of [Pixi.js](https://github.com/GoodBoyDigital/pixi.js/) for WebGL and Canvas rendering, and supports desktop and mobile web browsers. Games can be compiled to iOS, Android and native desktop apps via 3rd party tools. You can use JavaScript or TypeScript for development. Years after release, Phaser is still one of the [most starred game frameworks](https://github.com/showcases/javascript-game-engines) on GitHub.
 
-Thousands of developers worldwide use Phaser. From indies and multi-national digital agencies, to schools and Universities. Each creating their own incredible [games](http://phaser.io/games/).
+Thousands of developers worldwide use Phaser. From indies and multi-national digital agencies, to schools and Universities. Each creating their own incredible [games](http://phaser.io/games).
 
-Phaser v2 was built and maintained by [Photon Storm](http://www.photonstorm.com) and turned over to the community (as Phaser CE) in November 2016. [Phaser v3](https://phaser.io/phaser3) is in active development.
+Phaser v2 was built and maintained by [Photon Storm](http://www.photonstorm.com) and turned over to the community (as Phaser CE) in November 2016. [Phaser v3](http://phaser.io/phaser3) is in active development.
 
-The [current Phaser CE release is 2.10.0](https://github.com/photonstorm/phaser-ce/releases/tag/v2.10.0).
+The [current Phaser CE release is 2.10.2](https://github.com/photonstorm/phaser-ce/releases/tag/v2.10.2).
 
 - **Visit:** The [Phaser website](http://phaser.io) and follow on [Twitter](https://twitter.com/photonstorm) (#[phaserjs](https://twitter.com/hashtag/phaserjs))
-- **Learn:** [API Docs](https://photonstorm.github.io/phaser-ce/), [Support Forum][forum] and [StackOverflow](http://stackoverflow.com/questions/tagged/phaser-framework)
+- **Learn:** [API Docs](https://photonstorm.github.io/phaser-ce/), [Support Forum][forum] and [StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)
 - **Code:** 700+ [Examples](http://phaser.io/examples) ([source][examples]), new [Phaser CE examples](https://codepen.io/collection/AMbZgY/)
 - **Read:** Weekly [Phaser World](#newsletter) Newsletter
 - **Chat:** [Slack](http://phaser.io/community/slack) and [Discord](http://phaser.io/community/discord)
@@ -68,7 +68,7 @@ Cheers,
 
 Rich - [@photonstorm](https://twitter.com/photonstorm)
 
-![boogie](http://www.phaser.io/images/spacedancer.gif)
+![boogie](https://www.phaser.io/images/spacedancer.gif)
 
 <a name="games"></a>
 
@@ -109,7 +109,7 @@ Phaser is [hosted on Github][phaser]. There are a number of ways to download it:
 
 ### Bower / NPM
 
-Install via [bower](http://bower.io):
+Install via [bower](https://bower.io):
 
 ```bash
 bower install phaser-ce
@@ -128,16 +128,16 @@ Please see additional steps for [Browserify/CommonJS](#browserify) and [Webpack]
 [Phaser CE is on jsDelivr](http://www.jsdelivr.com/projects/phaser-ce), a "super-fast CDN for developers". Include the following in your html:
 
 ```html
-<script src="//cdn.jsdelivr.net/npm/phaser-ce@2.10.0/build/phaser.js"></script>
+<script src="//cdn.jsdelivr.net/npm/phaser-ce@2.10.2/build/phaser.js"></script>
 ```
 
 or the minified version:
 
 ```html
-<script src="//cdn.jsdelivr.net/npm/phaser-ce@2.10.0"></script>
+<script src="//cdn.jsdelivr.net/npm/phaser-ce@2.10.2"></script>
 ```
 
-[Custom builds](https://cdn.jsdelivr.net/npm/phaser-ce@2.10.0/build/custom/) are available too.
+[Custom builds](https://cdn.jsdelivr.net/npm/phaser-ce@2.10.2/build/custom/) are available too.
 
 <a name="getting-started"></a>
 
@@ -159,7 +159,7 @@ Browse [Phaser Examples](http://phaser.io/examples) or clone [phaser-examples-mi
 
 ### Web Templates
 
-If you'd like to try coding in Phaser right now, with nothing more than your web browser, open up the [Phaser CE Game Template](http://codepen.io/pen?template=vyKJvw). There are [CoffeeScript](http://codepen.io/pen?template=OWxELE) and [ES6](http://codepen.io/pen?template=pRGPKG) variants too.
+If you'd like to try coding in Phaser right now, with nothing more than your web browser, open up the [Phaser CE Game Template](https://codepen.io/pen?template=vyKJvw). There are [CoffeeScript](https://codepen.io/pen?template=OWxELE) and [ES6](https://codepen.io/pen?template=pRGPKG) variants too.
 
 ### http-server
 
@@ -245,7 +245,7 @@ As well as the [book](http://phaser.io/interphase) you get all the source code, 
 
 ### Game Mechanic Explorer
 
-The [Game Mechanic Explorer](http://gamemechanicexplorer.com) is a great interactive way to learn how to develop specific game mechanics in Phaser. Well worth exploring once you've got your dev environment set-up.
+The [Game Mechanic Explorer](https://gamemechanicexplorer.com) is a great interactive way to learn how to develop specific game mechanics in Phaser. Well worth exploring once you've got your dev environment set-up.
 
 ### Mighty Editor - Visual Game Editor
 
@@ -271,7 +271,7 @@ See the [Creating a Custom Phaser Build](http://phaser.io/tutorials/creating-cus
 
 ### Building from source
 
-Should you wish to build Phaser from source you can take advantage of the provided [Grunt](http://gruntjs.com/) scripts. Ensure you have the required packages by running `npm install` first.
+Should you wish to build Phaser from source you can take advantage of the provided [Grunt](https://gruntjs.com/) scripts. Ensure you have the required packages by running `npm install` first.
 
 Run `grunt` to perform a default build to the `dist` folder.
 
@@ -328,91 +328,45 @@ Written something cool in Phaser? Please tell us about it in the [forum][forum],
 
 # Change Log
 
-## Unreleased
+## Version 2.10.2 - 15th March 2018
 
 ### New Features
 
-* Phaser.Sound#playOnce flags a sound for deletion after it is played once. This is a simple method for avoiding [adding](https://photonstorm.github.io/phaser-ce/Phaser.SoundManager.html#add) new Sound objects for sounds that are intended to just be played once and done.
-
-### Bug Fixes
-
-* Fixes circles stick to each other using Arcade physics (#451).
-* Fixes TS definition for bitmapText in GameObjectCreator (#460).
-
-### Thanks
-
-@samme, @wtravO, @mmacvicar, @netdream
-
-## Version 2.10.0 - 18 January 2018
-
-### New Features
-
-* New [game config](https://photonstorm.github.io/phaser-ce/global.html#GameConfig) arguments:
-    - `alignH`, `alignV`
-    - `crisp`
-    - `disableStart`
-    - `failIfMajorPerformanceCaveat`
-    - `roundPixels`
-    - `scaleH`, `scaleV`, `trimH`, `trimV`
-* New game loop features:
-    - [Phaser.Game#dropFrames](https://photonstorm.github.io/phaser-ce/Phaser.Game.html#dropFrames) skips renders when the game loop delta time is spiraling upwards (#314).
-    - [Phaser.Game#forceSingleRender](https://photonstorm.github.io/phaser-ce/Phaser.Game.html#forceSingleRender) can be set to `false` to reduce the render rate to match Phaser.Time#desiredFps (#313).
-    - [Phaser.Time#ups](https://photonstorm.github.io/phaser-ce/Phaser.Time.html#ups) tracks updates per second when [advanced timing](https://photonstorm.github.io/phaser-ce/Phaser.Time.html#advancedTiming) is enabled.
-    - [Phaser.Time#rps](https://photonstorm.github.io/phaser-ce/Phaser.Time.html#rps) tracks renders per second when [advanced timing](https://photonstorm.github.io/phaser-ce/Phaser.Time.html#advancedTiming) is enabled.
-* [Phaser.Color](https://photonstorm.github.io/phaser-ce/Phaser.Color.html) constants AQUA, BLACK, BLUE, GRAY, GREEN, ORANGE, RED, VIOLET, WHITE, and YELLOW. You can use these anywhere you use a numeric (hex) color value: [Graphics](https://photonstorm.github.io/phaser-ce/Phaser.Graphics.html), [Sprite#tint](https://photonstorm.github.io/phaser-ce/Phaser.Sprite.html#tint), [Stage#backgroundColor](https://photonstorm.github.io/phaser-ce/Phaser.Stage.html#backgroundColor).
-* [Phaser.Game#pendingDestroy](https://photonstorm.github.io/phaser-ce/Phaser.Game.html#pendingDestroy) marks the game for destruction at the next update. It can be used safely within an update callback.
-* [Phaser.Point#round](https://photonstorm.github.io/phaser-ce/Phaser.Point.html#round) rounds a point's coordinates.
-* [Phaser.SoundManager#onTouchUnlock](https://photonstorm.github.io/phaser-ce/Phaser.SoundManager.html#onTouchUnlock) signal (#434)
-* [Phaser.SoundManager#removeAll](https://photonstorm.github.io/phaser-ce/Phaser.SoundManager.html#removeAll) destroys all sounds and removes them from the Manager.
-* [Phaser.Utils.Debug](https://photonstorm.github.io/phaser-ce/Phaser.Utils.Debug.html) methods:
-    - [Debug#loader](https://photonstorm.github.io/phaser-ce/Phaser.Utils.Debug.html#loader) displays [loader](https://photonstorm.github.io/phaser-ce/Phaser.Loader.html) progress.
-    - [Debug#scale](https://photonstorm.github.io/phaser-ce/Phaser.Utils.Debug.html#scale) displays game/canvas dimensions and [Scale Manager](https://photonstorm.github.io/phaser-ce/Phaser.ScaleManager.html) state.
-    - [Debug#sound](https://photonstorm.github.io/phaser-ce/Phaser.Utils.Debug.html#sound) displays [Sound Manager](https://photonstorm.github.io/phaser-ce/Phaser.SoundManager.html) state.
-* [Phaser.Video#playWhenUnlocked](https://photonstorm.github.io/phaser-ce/Phaser.Video.html#playWhenUnlocked)
-* [Phaser.Video#onTouchUnlock](https://photonstorm.github.io/phaser-ce/Phaser.Video.html#onTouchUnlock) signal
+* You can set [clearBeforeRender](https://photonstorm.github.io/phaser-ce/global.html#GameConfig) when creating the game (#481).
 
 ### Updates
 
-* Phaser now falls back to the Canvas renderer if AUTO is selected and WebGL context creation fails. [Phaser.Device#webGL](https://photonstorm.github.io/phaser-ce/Phaser.Device.html#webGL) is now a soft check and doesn't create a test WebGL context. This is slightly more accurate (#402) and slightly faster (#420). Phaser.Device#webGLError was removed.
-* [Gamepad](https://photonstorm.github.io/phaser-ce/Phaser.Gamepad.html) input is now enabled while the game is paused (#423).
-* Removed gain smoothing for WebAudio volume changes (#385).
-* Updated ionic example project (#381).
-* Removed these deprecated items (#403):
-    - Phaser.ArrayUtils.rotate             → [Phaser.ArrayUtils.rotateLeft](https://photonstorm.github.io/phaser-ce/Phaser.ArrayUtils.html#_rotateLeft)
-    - Phaser.Device.isConsoleOpen
-    - Phaser.Loader#useXDomainRequest      → [xhrLoadWithXDR.js](resources/IE9/xhrLoadWithXDR.js)
-    - Phaser.Loader#xhrLoadWithXDR         → [xhrLoadWithXDR.js](resources/IE9/xhrLoadWithXDR.js)
-    - Phaser.Particles#update
-    - Phaser.Polygon#points (as a setter)  → [Phaser.Polygon#setTo](https://photonstorm.github.io/phaser-ce/Phaser.Polygon.html#setTo)
-    - Phaser.Touch#addTouchLockCallback    → [Phaser.Input#addTouchLockCallback](https://photonstorm.github.io/phaser-ce/Phaser.Input.html#addTouchLockCallback)
-    - Phaser.Touch#removeTouchLockCallback → [Phaser.Input#removeTouchLockCallback](https://photonstorm.github.io/phaser-ce/Phaser.Input.html#removeTouchLockCallback)
-    - PIXI.BaseTexture#updateSourceImage   → [Phaser.Component.LoadTexture#loadTexture](https://photonstorm.github.io/phaser-ce/Phaser.Component.LoadTexture.html#loadTexture)
-    - RevoluteConstraint#motorIsEnabled    → RevoluteConstraint#motorEnabled
-    - Shape.RECTANGLE                      → Shape.BOX
+* Phaser tries to resume a suspended WebAudio context after a user click/tap on any device (#437, #482).
 
 ### Bug Fixes
 
-* Fixed a false positive in [TweenManager#isTweening](https://photonstorm.github.io/phaser-ce/Phaser.TweenManager.html#isTweening) (#414).
-* Changing a display object's [smoothed](https://photonstorm.github.io/phaser-ce/Phaser.Sprite.html#smoothed) property now marks the WebGL texture as dirty (#432, #433).
-* Fixed Phaser.Sound temporarily having an incorrect gain setting at creation time.
-* Fixed sprites not receiving [onInputOut](https://photonstorm.github.io/phaser-ce/Phaser.Events.html#onInputOver) when the pointer leaves the game canvas (#429).
-* Fixed some TypeScript definitions.
+* Phaser.Text objects show the correct [type](https://photonstorm.github.io/phaser-ce/Phaser.Text.html#type) (#479).
+* [game.add.plugin](https://photonstorm.github.io/phaser-ce/Phaser.GameObjectFactory.html#plugin) forwards all arguments to [game.plugins.add](https://photonstorm.github.io/phaser-ce/Phaser.PluginManager.html#add) (#486).
+* [Phaser.Signal#memorized](https://photonstorm.github.io/phaser-ce/Phaser.Signal.html#memorize) works correctly after only one listener is added (#495).
+
+### TypeScript
+
+* PIXI.Rectangle includes more of Phaser.Rectangle's properties (#491).
+
+### Documentation
+
+* Game Objects show [width](https://photonstorm.github.io/phaser-ce/PIXI.DisplayObjectContainer.html#width) and [height](https://photonstorm.github.io/phaser-ce/PIXI.DisplayObjectContainer.html#height) properties (#488).
 
 ### Thanks
 
-@ankush-badyal, @Dreaded-Gnu, @Mertank, @pavle-goloskokovic, @photonstorm, @qdrj, @samme, @squaresun
+@KIVassilev, @koalaylj, @photonstorm, @RedPanduzer, @samme, @Siri0n
 
 For changes in previous releases please see the extensive [Change Log](https://github.com/photonstorm/phaser-ce/blob/master/CHANGELOG.md).
 
 # License
 
-Phaser is released under the [MIT License](http://opensource.org/licenses/MIT).
+Phaser is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 # Created by
 
 Phaser is a [Photon Storm](http://www.photonstorm.com) production.
 
-![storm](http://www.phaser.io/images/github/photonstorm-x2.png)
+![storm](https://www.phaser.io/images/github/photonstorm-x2.png)
 
 Created by [Richard Davey](mailto:rich@photonstorm.com). Powered by coffee, anime, pixels and love.
 
@@ -424,10 +378,10 @@ All rights reserved.
 
 [![Analytics](https://ga-beacon.appspot.com/UA-44006568-2/phaser/index)](https://github.com/igrigorik/ga-beacon)
 
-[get-js]: https://github.com/photonstorm/phaser-ce/releases/download/v2.10.0/phaser.js
-[get-minjs]: https://github.com/photonstorm/phaser-ce/releases/download/v2.10.0/phaser.min.js
-[get-zip]: https://github.com/photonstorm/phaser-ce/archive/v2.10.0.zip
-[get-tgz]: https://github.com/photonstorm/phaser-ce/archive/v2.10.0.tar.gz
+[get-js]: https://github.com/photonstorm/phaser-ce/releases/download/v2.10.2/phaser.js
+[get-minjs]: https://github.com/photonstorm/phaser-ce/releases/download/v2.10.2/phaser.min.js
+[get-zip]: https://github.com/photonstorm/phaser-ce/archive/v2.10.2.zip
+[get-tgz]: https://github.com/photonstorm/phaser-ce/archive/v2.10.2.tar.gz
 [clone-http]: https://github.com/photonstorm/phaser.git
 [clone-ssh]: ssh://git@github.com:photonstorm/phaser.git
 [clone-svn]: https://github.com/photonstorm/phaser

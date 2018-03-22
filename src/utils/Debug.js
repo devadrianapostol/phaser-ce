@@ -8,7 +8,7 @@
 * A collection of methods for displaying debug information about game objects.
 *
 * If your game is running in Canvas mode, then you should invoke all of the Debug methods from
-* your games `render` function. This is because they are drawn directly onto the game canvas
+* your game's `render` function. This is because they are drawn directly onto the game canvas
 * itself, so if you call any debug methods outside of `render` they are likely to be overwritten
 * by the game itself.
 *
@@ -600,7 +600,7 @@ Phaser.Utils.Debug.prototype = {
 
         this.start(x, y, color);
 
-        this.line('Sprite: ' + ' (' + sprite.width + ' x ' + sprite.height + ') anchor: ' + sprite.anchor.x + ' x ' + sprite.anchor.y);
+        this.line('Sprite: ' + (sprite.name || '') + ' (' + sprite.width + ' x ' + sprite.height + ') anchor: ' + sprite.anchor.x + ' x ' + sprite.anchor.y);
         this.line('x: ' + sprite.x.toFixed(1) + ' y: ' + sprite.y.toFixed(1));
         this.line('angle: ' + sprite.angle.toFixed(1) + ' rotation: ' + sprite.rotation.toFixed(1));
         this.line('visible: ' + sprite.visible + ' in camera: ' + sprite.inCamera);
@@ -800,7 +800,7 @@ Phaser.Utils.Debug.prototype = {
     text: function (text, x, y, color, font) {
 
         color = color || 'rgb(255,255,255)';
-        font = font || '16px Courier';
+        font = font || this.font;
 
         this.start();
         this.context.font = font;

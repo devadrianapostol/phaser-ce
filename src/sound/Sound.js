@@ -765,6 +765,9 @@ Phaser.Sound.prototype = {
                 if (this._sound && (this.game.device.cocoonJS || this._sound.readyState === 4))
                 {
                     this._sound.play();
+										
+                    this._sound.loop = this.loop;
+										
                     //  This doesn't become available until you call play(), wonderful ...
                     this.totalDuration = this._sound.duration;
 
@@ -879,14 +882,16 @@ Phaser.Sound.prototype = {
                     this._sound.connect(this.gainNode);
                 }
 
-                if (this.loop)
+                if (this.currentMarker === '')
                 {
-                    this._sound.loop = true;
-                }
-
-                if (!this.loop && this.currentMarker === '')
-                {
-                    this._sound.onended = this.onEndedHandler.bind(this);
+                    if (this.loop)
+                    {
+                        this._sound.loop = true;
+                    }
+                    else
+                    {
+                        this._sound.onended = this.onEndedHandler.bind(this);
+                    }
                 }
 
                 var duration = this.duration - (this.pausedPosition / 1000);
@@ -907,7 +912,14 @@ Phaser.Sound.prototype = {
                         }
                         else
                         {
-                            this._sound.start(0, p);
+                            if (this.currentMarker === '')
+                            {
+                                this._sound.start(0, p);
+                            }
+                            else
+                            {
+                                this._sound.start(0, p, duration);
+                            }
                         }
                     }
                     else
